@@ -23,7 +23,7 @@ serialport.list(function (err, ports) {
 
     var app = require('http').createServer(handler),
       io = require('socket.io').listen(app, {
-        log: true
+        log: false
       }),
       fs = require('fs')
 
